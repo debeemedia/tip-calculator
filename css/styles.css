@@ -1,0 +1,89 @@
+/* styles.css for tip-calc */
+
+body {
+	background: #333 url("../images/cutlery.jpg") center center no-repeat;
+	background-size: cover;
+	color: #532827;
+}
+
+#container {
+	width: 400px;
+	margin: 40px auto 0;
+	padding: 50px;
+	box-sizing: border-box;
+	background: url("../images/paper-pattern.jpg") top left repeat;
+	box-shadow: 0 10px 15px -8px #000;
+	border-radius: 5px;
+	text-align: center;
+
+}
+
+h1 {
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: solid 1px #ddd;
+}
+
+form {
+	text-align: left;
+}
+
+form input, form select {
+	padding: 8px;
+	margin: 10px 0;
+}
+
+form label {
+	display: block;
+	margin: 25px 0;
+	font-weight: bold;
+}
+
+form input[type="text"] { /* CHECK OUT THIS ATTRIBUTE SELECTOR */
+	width: 90px;
+}
+
+button {
+	background: #6c2726;
+	color: white;
+	border: none;
+	border-bottom: solid 4px #222;
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 20px 30px;
+	width: 100%;
+}
+
+button:hover {
+	background: #4c2827;
+	border-bottom-color: #111;
+}
+
+button:active {
+	position: relative;
+	top: 1px; /* when you click the button, it will move down by 1px */
+}
+
+#totalTip {
+	font-size: 50px;
+	margin-top: 40px;
+}
+
+#totalTip::before {
+	content: "Tip amount";
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	text-transform: uppercase;
+}
+
+#totalTip sup {
+	font-size: 24px;
+	top: -18px; /* CHECK OUT THIS PROPERTY TOP */
+}
+
+#totalTip small {
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+}
