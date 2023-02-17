@@ -1,4 +1,4 @@
-/* styles.css for tip-calc */
+/* styles.css for tip-calculator */
 
 body {
 	background: #333 url("../images/cutlery.jpg") center center no-repeat;
@@ -39,7 +39,7 @@ form label {
 	font-weight: bold;
 }
 
-form input[type="text"] { /* CHECK OUT THIS ATTRIBUTE SELECTOR */
+form input[type="text"] {
 	width: 90px;
 }
 
@@ -61,7 +61,7 @@ button:hover {
 
 button:active {
 	position: relative;
-	top: 1px; /* when you click the button, it will move down by 1px */
+	top: 1px; /* when you click the button, it will move down by 1px. Slight jiggle effect */
 }
 
 #totalTip {
@@ -69,7 +69,7 @@ button:active {
 	margin-top: 40px;
 }
 
-#totalTip::before {
+#totalTip::before { /* this is to show that you can add text with CSS with the before selector */
 	content: "Tip amount";
 	font-size: 14px;
 	font-weight: bold;
@@ -79,7 +79,7 @@ button:active {
 
 #totalTip sup {
 	font-size: 24px;
-	top: -18px; /* CHECK OUT THIS PROPERTY TOP */
+	top: -18px;
 }
 
 #totalTip small {
